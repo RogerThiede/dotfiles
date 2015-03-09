@@ -58,6 +58,9 @@ export HISTSIZE=32768;
 export HISTFILESIZE=$HISTSIZE;
 export HISTIGNORE="ls:pwd:exit:date";
 
+# Disable LESS history file
+export LESSHISTFILE=-
+
 # Default to more descriptive prompt of filename/lines in less with color escape codes displayed as colors
 alias less="less --LONG-PROMPT --RAW-CONTROL-CHARS"
 
