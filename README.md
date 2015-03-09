@@ -2,6 +2,25 @@ dotfiles
 ========
 Your dotfiles are how you personalize your system. These are mine.
 
+Installation
+------------
+Setup [oh-my-zsh](http://ohmyz.sh)
+```bash
+export ZSH=~/Documents/Repositories/git/oh-my-zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+```
+
+Setup [Cider](https://pypi.python.org/pypi/cider/)
+
+__Disclaimer:__ _I do not know if cider restore may overwrite pre-existing
+files_
+
+```bash
+pip install --upgrade cider
+git clone https://github.com/RogerThiede/dotfiles.git ~/.cider
+cider restore
+```
+
 ## Curious about my setup?
 My system is reliant upon the
 [Mac App Store](https://www.apple.com/osx/apps/app-store/),
@@ -16,3 +35,4 @@ Cask setup as well as saving and restoring ~ symlinks.
 
 My dotfiles are managed via [Cider](https://pypi.python.org/pypi/cider/), a
 hassle-free bootstrapping python tool using Homebrew.
+

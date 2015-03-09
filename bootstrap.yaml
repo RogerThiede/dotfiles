@@ -52,6 +52,7 @@
     !!python/unicode 'config/.*': !!python/unicode '~'
     !!python/unicode 'git/.*': !!python/unicode '~'
     !!python/unicode 'vim/.*': !!python/unicode '~'
+    !!python/unicode 'zsh/.*': !!python/unicode '~'
 !!python/unicode 'taps':
 - !!python/unicode 'caskroom/cask'
 - !!python/unicode 'homebrew/binary'
