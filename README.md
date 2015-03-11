@@ -4,10 +4,12 @@ Your dotfiles are how you personalize your system. These are mine.
 
 Installation
 ------------
-Setup [oh-my-zsh](http://ohmyz.sh)
+Setup [oh-my-zsh](http://ohmyz.sh), and 
+[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 ```bash
 export ZSH=~/Documents/Repositories/git/oh-my-zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting.git
 ```
 
 Setup [Cider](https://pypi.python.org/pypi/cider/)
