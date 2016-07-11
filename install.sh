@@ -13,6 +13,9 @@ if test ! $(which brew); then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# Update any existing homebrew recipes
+brew update
+
 # Check for Python pip
 if test ! $(which pip); then
     echo "python pip needs to be installed in order to install cider."
