@@ -49,6 +49,7 @@
 - !!python/unicode 'z'
 - !!python/unicode 'zsh'
 !!python/unicode 'symlinks':
+    !!python/unicode 'Applications/*': !!python/unicode '~/Applications/'
     !!python/unicode 'config/.*': !!python/unicode '~'
     !!python/unicode 'git/.*': !!python/unicode '~'
     !!python/unicode 'vim/.*': !!python/unicode '~'
