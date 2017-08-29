@@ -1,14 +1,15 @@
 !!python/unicode 'casks':
 - !!python/unicode 'araxis-merge'
 - !!python/unicode 'dropbox'
+- !!python/unicode 'google-chrome'
 - !!python/unicode 'grandperspective'
 - !!python/unicode 'macdown'
 - !!python/unicode 'makemkv'
 - !!python/unicode 'nvalt'
-- !!python/unicode 'p4v'
 - !!python/unicode 'paragon-ntfs'
 - !!python/unicode 'sourcetree'
 - !!python/unicode 'vagrant'
+- !!python/unicode 'visual-studio-code'
 - !!python/unicode 'vlc'
 !!python/unicode 'formulas':
 - !!python/unicode 'autoconf'
@@ -36,7 +37,6 @@
 - !!python/unicode 'mpfr'
 - !!python/unicode 'openssl'
 - !!python/unicode 'pcre'
-- !!python/unicode 'perforce'
 - !!python/unicode 'pkg-config'
 - !!python/unicode 'python'
 - !!python/unicode 'readline'
@@ -57,5 +57,4 @@
     !!python/unicode 'zsh/.*': !!python/unicode '~'
 !!python/unicode 'taps':
 - !!python/unicode 'caskroom/cask'
-- !!python/unicode 'homebrew/binary'
-- !!python/unicode 'homebrew/dupes'
+- !!python/unicode 'homebrew/core'
