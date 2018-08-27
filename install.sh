@@ -17,17 +17,16 @@ fi
 brew update
 
 # Check for Python pip
-if test ! $(which pip); then
+if test ! $(which pip3); then
     echo "python pip needs to be installed in order to install cider."
     echo "Installing python (with built in python pip)..."
     brew install python
-    brew linkapps python
     echo "Updating python pip and python setuptools..."
-    pip install --upgrade pip setuptools
+    pip3 install --upgrade pip setuptools
 fi
 
 # Check for Cider
 if test ! $(which cider); then
     echo "Installing cider..."
-    pip install --upgrade cider
+    pip3 install --upgrade cider
 fi
