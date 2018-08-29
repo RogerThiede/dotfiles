@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=~/Documents/Repositories/git/oh-my-zsh
+export ZSH=~/Documents/git/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -45,7 +45,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew brew-cask web-search vagrant zsh-syntax-highlighting history-substring-search)
+plugins=(git brew-cask web-search vagrant zsh-syntax-highlighting history-substring-search)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -64,8 +64,8 @@ export LESSHISTFILE=-
 # Default to more descriptive prompt of filename/lines in less with color escape codes displayed as colors
 alias less="less --LONG-PROMPT --RAW-CONTROL-CHARS"
 
-# brew cask install to /Applications instead of to ~/Applications
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+# brew cask install to /Applications - this is now the default behavior
+# export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export PYTHONSTARTUP="$HOME/.config/pythonstartup.py"
 . `brew --prefix`/etc/profile.d/z.sh
