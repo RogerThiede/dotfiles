@@ -30,3 +30,10 @@ if test ! $(which cider); then
     echo "Installing cider..."
     pip3 install --upgrade cider
 fi
+
+cider restore
+
+# Install oh-my-zsh
+export ZSH=~/Documents/git/oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
