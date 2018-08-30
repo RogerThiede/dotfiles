@@ -32,6 +32,7 @@ if test ! $(which cider); then
 fi
 
 cider restore
+brew bundle
 
 # Install oh-my-zsh
 export ZSH=~/Documents/git/oh-my-zsh
