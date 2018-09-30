@@ -14,7 +14,6 @@
 !!python/unicode 'formulas':
 - !!python/unicode 'autoconf'
 - !!python/unicode 'boost'
-- !!python/unicode 'chromedriver'
 - !!python/unicode 'cloog'
 - !!python/unicode 'fdupes'
 - !!python/unicode 'flac'

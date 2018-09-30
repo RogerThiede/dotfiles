@@ -52,4 +52,8 @@ cask "visual-studio-code"
 cask "vlc"
 mas "Araxis Find Duplicate Files", id: 438438956
 mas "Delineato Pro", id: 590407707
+mas "GoodTask", id: 1143437985
+mas "Keka", id: 470158793
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "Paste", id: 967805235
+mas "Screens", id: 446107677
