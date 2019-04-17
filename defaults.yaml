@@ -1,14 +1,14 @@
-!!python/unicode 'NSGlobalDomain':
-    !!python/unicode 'AppleShowAllExtensions': true
-    !!python/unicode 'NSAutomaticDashSubstitutionEnabled': false
-    !!python/unicode 'NSAutomaticQuoteSubstitutionEnabled': false
-    !!python/unicode 'NSDocumentSaveNewDocumentsToCloud': false
-!!python/unicode 'com.apple.TimeMachine':
-    !!python/unicode 'DoNotOfferNewDisksForBackup': true
-!!python/unicode 'com.apple.desktopservices':
-    !!python/unicode 'DSDontWriteNetworkStores': true
-!!python/unicode 'com.apple.finder':
-    !!python/unicode 'ShowExternalHardDrivesOnDesktop': true
-    !!python/unicode 'ShowHardDrivesOnDesktop': true
-    !!python/unicode 'ShowMountedServersOnDesktop': true
-    !!python/unicode 'ShowRemovableMediaOnDesktop': true
+NSGlobalDomain:
+    AppleShowAllExtensions: true
+    NSAutomaticDashSubstitutionEnabled: false
+    NSAutomaticQuoteSubstitutionEnabled: false
+    NSDocumentSaveNewDocumentsToCloud: false
+com.apple.TimeMachine:
+    DoNotOfferNewDisksForBackup: true
+com.apple.desktopservices:
+    DSDontWriteNetworkStores: true
+com.apple.finder:
+    ShowExternalHardDrivesOnDesktop: true
+    ShowHardDrivesOnDesktop: true
+    ShowMountedServersOnDesktop: true
+    ShowRemovableMediaOnDesktop: true
