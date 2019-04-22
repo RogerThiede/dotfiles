@@ -3,12 +3,25 @@ NSGlobalDomain:
     NSAutomaticDashSubstitutionEnabled: false
     NSAutomaticQuoteSubstitutionEnabled: false
     NSDocumentSaveNewDocumentsToCloud: false
+    NSNavPanelExpandedStateForSaveMode: true
+com.apple.Terminal:
+    Default Window Settings: Homebrew
+    Startup Window Settings: Homebrew
 com.apple.TimeMachine:
     DoNotOfferNewDisksForBackup: true
 com.apple.desktopservices:
     DSDontWriteNetworkStores: true
+com.apple.dock:
+    tilesize: 46
+    wvous-bl-corner: 10
+    wvous-bl-modifier: 0
+    wvous-tr-corner: 4
+    wvous-tr-modifier: 0
 com.apple.finder:
     ShowExternalHardDrivesOnDesktop: true
     ShowHardDrivesOnDesktop: true
     ShowMountedServersOnDesktop: true
     ShowRemovableMediaOnDesktop: true
+    _FXSortFoldersFirst: true
+com.apple.menuextra.clock:
+    DateFormat: EEE MMM d  h:mm a
