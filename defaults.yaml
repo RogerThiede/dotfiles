@@ -4,14 +4,18 @@ NSGlobalDomain:
     NSAutomaticQuoteSubstitutionEnabled: false
     NSDocumentSaveNewDocumentsToCloud: false
     NSNavPanelExpandedStateForSaveMode: true
+com.apple.Finder:
+    FXPreferredViewStyle: Nlsv
 com.apple.Terminal:
     Default Window Settings: Homebrew
     Startup Window Settings: Homebrew
+    shellExitAction: 1
 com.apple.TimeMachine:
     DoNotOfferNewDisksForBackup: true
 com.apple.desktopservices:
     DSDontWriteNetworkStores: true
 com.apple.dock:
+    show-recents: false
     tilesize: 46
     wvous-bl-corner: 10
     wvous-bl-modifier: 0
@@ -22,6 +26,10 @@ com.apple.finder:
     ShowHardDrivesOnDesktop: true
     ShowMountedServersOnDesktop: true
     ShowRemovableMediaOnDesktop: true
+    _FXShowPosixPathInTitle: true
     _FXSortFoldersFirst: true
+com.apple.ical:
+    Show Week Numbers: 1
+    n days of week: 5
 com.apple.menuextra.clock:
     DateFormat: EEE MMM d  h:mm a
