@@ -1,0 +1,10 @@
+{
+    "symlinks": {
+        "Applications/*": "~/Applications/",
+        "config/.*": "~",
+        "git/.*": "~",
+        "vim/.*": "~",
+        "vscode/*": "~/Library/Application Support/Code/User/",
+        "zsh/.*": "~"
+    }
+}
