@@ -4,6 +4,7 @@ NSGlobalDomain:
     NSAutomaticQuoteSubstitutionEnabled: false
     NSDocumentSaveNewDocumentsToCloud: false
     NSNavPanelExpandedStateForSaveMode: true
+    com.apple.dock: mru-spaces
 com.apple.Finder:
     FXPreferredViewStyle: Nlsv
 com.apple.Terminal:
