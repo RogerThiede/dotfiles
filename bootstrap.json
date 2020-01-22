@@ -1,5 +1,6 @@
 {
     "after-scripts": [
+        "./scripts/brew-install.sh",
         "./scripts/generate-ed25519-ssh-key.sh"
     ],
     "symlinks": {
