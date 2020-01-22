@@ -2,4 +2,9 @@
 {
     "editor.minimap.enabled": true,
     "window.openFilesInNewWindow": "off",
+    "telemetry.enableTelemetry": false,
+    "python.pythonPath": "/usr/bin/env python3",
+    "breadcrumbs.enabled": true,
+    "editor.renderControlCharacters": true,
+    "workbench.activityBar.visible": true,
 }
