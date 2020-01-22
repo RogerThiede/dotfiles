@@ -1,4 +1,7 @@
 {
+    "after-scripts": [
+        "./scripts/generate-ed25519-ssh-key.sh"
+    ],
     "symlinks": {
         "Applications/*": "~/Applications/",
         "config/.*": "~",
