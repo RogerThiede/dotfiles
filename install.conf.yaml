@@ -1,3 +1,15 @@
-- clean: []
-- link: {}
-- shell: []
+# install.conf.yaml
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: symlinks/git/.gitconfig
+    ~/.gitignore_global: symlinks/git/.gitignore_global
+    ~/.vimrc: symlinks/vim/.vimrc    
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
