@@ -21,8 +21,8 @@ single tool called [Cider](https://github.com/msanders/cider) that saves and res
 Cask` setup as well as saving and restoring `~` symlinks.
 
 Over time, `Homebrew` has incorporated many of `Cider`'s advertised features that I chose it for. Specifically,
-`Homebrew` has integrated `Homebrew Cask` into its built-in functionality and introduced `Brewfile` support. The developer of
-`Cider` has superseded it with a new tool that is more specialized for macOS programmed in Swift,
+`Homebrew` has integrated `Homebrew Cask` into its built-in functionality and introduced `Brewfile` support. The
+developer of `Cider` has superseded it with a new tool that is more specialized for macOS programmed in Swift,
 [zero.sh](https://github.com/zero-sh/zero.sh). This led me to experiment with other dotfile managers which provide
 broader, more versatile features for managing configurations that are also platform-agnostic.
 

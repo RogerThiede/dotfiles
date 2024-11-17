@@ -2,3 +2,7 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "oh-my-zsh"]
+	path = symlinks/zsh/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
+	ignore = dirty

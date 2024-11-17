@@ -7,9 +7,11 @@
 - clean: ['~']
 
 - link:
+    ~/.dotfiles: ''
     ~/.gitconfig: symlinks/git/.gitconfig
     ~/.gitignore_global: symlinks/git/.gitignore_global
     ~/.vimrc: symlinks/vim/.vimrc    
+    ~/.zshrc: symlinks/zsh/.zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
