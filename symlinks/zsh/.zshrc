@@ -67,7 +67,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew)
+plugins=(brew zsh-syntax-highlighting)
 
 # User configuration
 setopt RM_STAR_WAIT
@@ -76,6 +76,8 @@ setopt APPEND_HISTORY
 export HISTSIZE=32768;
 export HISTFILESIZE=$HISTSIZE;
 export HISTIGNORE="ls:pwd:exit:date";
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
 
 # Disable LESS history file
 export LESSHISTFILE=-

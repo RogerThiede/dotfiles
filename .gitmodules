@@ -6,3 +6,6 @@
 	path = symlinks/zsh/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 	ignore = dirty
+[submodule "zsh-syntax-highlighting"]
+	path = symlinks/zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
