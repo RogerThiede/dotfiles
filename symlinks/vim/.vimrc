@@ -44,6 +44,12 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
+" spell checking and automatic wrapping at the recommended 72 columns to
+" commit messages.
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" For non gitcommit messages, be less strict but prefer 80 columns
 augroup vimrc_autocmds
     autocmd BufEnter * highlight OverLength ctermbg=darkgrey guibg=#592929
     autocmd BufEnter * match OverLength /\%80v.*/
