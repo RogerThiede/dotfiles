@@ -82,6 +82,10 @@ ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
 # Disable LESS history file
 export LESSHISTFILE=-
 
+# Homebrew
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_ENV_HINTS=1
+
 # Default to more descriptive prompt of filename/lines in less with color escape codes displayed as colors
 alias less="less --LONG-PROMPT --RAW-CONTROL-CHARS"
 

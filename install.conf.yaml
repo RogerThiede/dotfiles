@@ -8,6 +8,12 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    -
+      command: scripts/install_homebrew.sh
+      description: Installing Homebrew
+      stdin: true
+      stdout: true
+      stderr: true
 
 - link:
     ~/.dotfiles: ''
