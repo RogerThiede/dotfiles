@@ -2,6 +2,7 @@
 [core]
 	excludesfile = ~/.gitignore_global 
 	preloadindex = true
+	pager = less --quit-if-one-screen --no-init
 [difftool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
 	path = 
