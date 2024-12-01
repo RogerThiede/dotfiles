@@ -1,30 +1,31 @@
 [user]
 [core]
-	excludesfile = ~/.gitignore_global 
-	preloadindex = true
-	pager = less --quit-if-one-screen --no-init
+    excludesfile = ~/.gitignore_global 
+    preloadindex = true
+    pager = less --quit-if-one-screen --no-init
 [difftool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = /Applications/SourceTree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
+    path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/araxisgitmerge-w.sh \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\"
-	trustExitCode = true
+    cmd = /Applications/SourceTree.app/Contents/Resources/araxisgitmerge-w.sh \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\"
+    trustExitCode = true
 [diff]
-        tool = araxis
-        # Detect copies as well as renames
-        renames = copies
+    tool = araxis
+    # Detect copies as well as renames
+    renames = copies
 [merge]
-        tool = araxis
+    tool = araxis
 [color]
-        # Use colors in Git commands that are capable of colored output when
-        # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-        ui = true
-        diff = auto
-        status = auto
-        branch = auto
+# Use colors in Git commands that are capable of colored output when
+# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+    ui = true
+    diff = auto
+    status = auto
+    branch = auto
 [rerere]
-        enabled = true
+    enabled = true
 [credential]
-        # rely upon ssh-agent through OS X Keychain
+    # rely upon ssh-agent through OS X Keychain
 [alias]
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
