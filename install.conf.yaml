@@ -15,6 +15,11 @@
       stdin: true
       stdout: true
       stderr: true
+    -
+      command: brew bundle --file=./Brewfile
+      description: Installing packages from Brewfile
+      stdout: true
+      stderr: true
 
 - link:
     ~/.dotfiles: ''
