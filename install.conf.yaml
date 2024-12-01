@@ -23,4 +23,7 @@
     ~/.vimrc: symlinks/vim/.vimrc    
     ~/.zshrc: symlinks/zsh/.zshrc
     symlinks/zsh/oh-my-zsh/custom/plugins/zsh-syntax-highlighting: symlinks/zsh/zsh-syntax-highlighting
+    ~/Library/Application Support/Code/User/settings.json: symlinks/vscode/settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: symlinks/vscode/keybindings.json
+    ~/Library/Application Support/Code/User/snippets: symlinks/vscode/snippets
 
