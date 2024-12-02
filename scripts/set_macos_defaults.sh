@@ -68,3 +68,13 @@ defaults write com.apple.Terminal "Default Window Settings" -string "Homebrew"
 
 # Set the startup window profile to "Homebrew"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
+
+# Close terminal windows on successful exit code
+/usr/libexec/PlistBuddy -c "Set 'Window Settings':Homebrew:shellExitAction 1" ~/Library/Preferences/com.apple.Terminal.plist
+
+###############################################################################
+# Calendar                                                                    #
+###############################################################################
+
+# Show week numbers
+defaults write com.apple.iCal "Show Week Numbers" -bool true
