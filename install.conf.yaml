@@ -20,6 +20,11 @@
       description: Installing packages from Brewfile
       stdout: true
       stderr: true
+    - 
+      command: scripts/generate_ssh_key.sh
+      description: Generating SSH Key
+      stdout: true
+      stderr: true
 
 - link:
     ~/.dotfiles: ''
