@@ -67,7 +67,13 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew fast-syntax-highlighting)
+plugins=(
+  brew                              # Homebrew aliases and completion
+  fzf                               # Fuzzy finder integration with keybindings
+  zoxide                            # Smart directory jumping with z command
+  colored-man-pages                 # Syntax highlighting for man pages
+  fast-syntax-highlighting          # Real-time command syntax highlighting
+)
 
 # User configuration
 setopt RM_STAR_WAIT
