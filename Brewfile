@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+brew "autoconf"
 brew "bat"
 brew "fzf"
 brew "lsd"

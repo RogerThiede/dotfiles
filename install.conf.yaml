@@ -25,6 +25,11 @@
       description: Generating SSH Key
       stdout: true
       stderr: true
+    -
+      command: scripts/build_fzf_tab_module.sh
+      description: Building fzf-tab binary module for improved performance
+      stdout: false
+      stderr: true
 
 - link:
     ~/.dotfiles: ''
@@ -32,6 +37,7 @@
     ~/.gitignore_global: symlinks/git/.gitignore_global
     ~/.vimrc: symlinks/vim/.vimrc    
     ~/.zshrc: symlinks/zsh/.zshrc
+    symlinks/zsh/oh-my-zsh/custom/plugins/fzf-tab: symlinks/zsh/fzf-tab
     symlinks/zsh/oh-my-zsh/custom/plugins/fast-syntax-highlighting: symlinks/zsh/fast-syntax-highlighting
     ~/Library/Application Support/Code/User/settings.json: symlinks/vscode/settings.json
     ~/Library/Application Support/Code/User/keybindings.json: symlinks/vscode/keybindings.json

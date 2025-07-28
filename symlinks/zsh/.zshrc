@@ -70,9 +70,10 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(
   brew                              # Homebrew aliases and completion
   fzf                               # Fuzzy finder integration with keybindings
+  fzf-tab                           # Replace zsh's default completion with fzf
   zoxide                            # Smart directory jumping with z command
   colored-man-pages                 # Syntax highlighting for man pages
-  fast-syntax-highlighting          # Real-time command syntax highlighting
+  fast-syntax-highlighting          # Real-time command syntax highlighting (must be last)
 )
 
 # User configuration
@@ -121,3 +122,22 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $ZSH/oh-my-zsh.sh
+
+
+# ============================================================================
+# Plugin Configurations
+# ============================================================================
+
+# Configure fzf-tab
+
+# force zsh not to show zsh completion menu, which allows fzf-tab to capture the unambiguous prefix
+zstyle ':completion:*' menu no
+
+# shows each group name in square brackets so fzf-tab can display them
+zstyle ':completion:*:descriptions' format '[%d]'
+
+# use '<' and '>' keys to cycle through groups
+zstyle ':fzf-tab:*' switch-group '<' '>'
+
+# disable sort when completing `git checkout` to resort to most recent used branches
+zstyle ':completion:*:git-checkout:*' sort false
