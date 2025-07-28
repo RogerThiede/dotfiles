@@ -1,10 +1,29 @@
 #!/usr/bin/env bash
 #
-# Sets my preferred macOS defaults.
+# macOS System Defaults Configuration
 #
-# Inspiration from https://mths.be/macos
+# This script sets preferred macOS system defaults and preferences to improve
+# the user experience. It configures various system settings including UI/UX
+# preferences, Finder behavior, Terminal settings, and more.
+#
+# Usage:
+#   ./set_macos_defaults.sh
+#
+# Prerequisites:
+# - macOS operating system
+# - Administrative privileges may be required for some settings
+#
+# Note:
+# - Some changes may require a system restart to take effect
+# - Inspiration from https://mths.be/macos
 
 set -o errexit
+set -o nounset
+set -o pipefail
+
+###############################################################################
+# Platform Validation                                                         #
+###############################################################################
 
 if [ "$(uname -s)" != "Darwin" ]; then
   exit 1

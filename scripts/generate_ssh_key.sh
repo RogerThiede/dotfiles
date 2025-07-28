@@ -3,20 +3,26 @@
 # SSH Key Generation
 #
 # This script generates a new SSH key for the current machine if one doesn't
-# already exist. The key is named based on the hostname and username.
+# already exist in the specified format `id_ed25519_${HOSTNAME}_${USERNAME}`.
 # The key is protected by a complex passphrase stored in the macOS Keychain.
 #
 # Usage:
 #   ./generate_ssh_key.sh
 #
+# Prerequisites:
+# - openssl
+# - macOS operating system
+#
 # Note:
-# - The passphrase is stored securely in the macOS Keychain.
-# - The script uses the default username and hostname for the key filename
-#   and the SSH key comment.
+# - The macOS Keychain will need to be accessible to unlock the key.
 
 set -o errexit
 set -o nounset
 set -o pipefail
+
+###############################################################################
+# Prerequisites Validation                                                    #
+###############################################################################
 
 if [ "$(uname -s)" != "Darwin" ]; then
   exit 1
@@ -30,6 +36,10 @@ for cmd in openssl /usr/bin/ssh-keygen /usr/bin/ssh-add; do
     fi
 done
 
+###############################################################################
+# SSH Directory Setup                                                         #
+###############################################################################
+
 # Create .ssh directory if it doesn't exist
 SSH_DIR="$HOME/.ssh"
 mkdir -p "$SSH_DIR"
@@ -42,6 +52,10 @@ KEY_FILENAME="id_ed25519_${HOSTNAME}_${USERNAME}"
 
 KEY_PATH="$SSH_DIR/$KEY_FILENAME"
 
+###############################################################################
+# SSH Key Generation                                                          #
+###############################################################################
+
 # Check if SSH key already exists
 if [ -f "$KEY_PATH" ]; then
     echo "SSH key already exists at $KEY_PATH. Skipping key generation."
@@ -53,6 +67,10 @@ PASSPHRASE=$(openssl rand -base64 32)
 
 # Generate the SSH key using ed25519 with increased KDF rounds
 /usr/bin/ssh-keygen -t ed25519 -a 100 -C "${USERNAME}@${HOSTNAME}" -f "$KEY_PATH" -N "$PASSPHRASE"
+
+###############################################################################
+# Keychain Integration                                                        #
+###############################################################################
 
 # Create a temporary script for SSH_ASKPASS
 ASKPASS_SCRIPT=$(mktemp)
@@ -72,11 +90,19 @@ SSH_ASKPASS_REQUIRE_PASS=1 /usr/bin/ssh-add --apple-use-keychain "$KEY_PATH" < /
 # Clean up the temporary askpass script
 rm "$ASKPASS_SCRIPT"
 
+###############################################################################
+# File Permissions                                                            #
+###############################################################################
+
 # Ensure the key has the correct permissions
 chmod 600 "$KEY_PATH"
 chmod 644 "${KEY_PATH}.pub"
 
 PUBLIC_KEY_PATH="${KEY_PATH}.pub"
+
+###############################################################################
+# User Instructions                                                           #
+###############################################################################
 
 # Prompt to use ssh-copy-id to add the key to a remote server
 echo "Passphrase is stored in the macOS Keychain."
