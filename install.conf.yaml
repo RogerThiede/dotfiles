@@ -30,6 +30,11 @@
       description: Building fzf-tab binary module for improved performance
       stdout: false
       stderr: true
+    -
+      command: scripts/set_macos_file_associations.sh
+      description: Configuring macOS file associations
+      stdout: true
+      stderr: true
 
 - link:
     ~/.dotfiles: ''
