@@ -48,3 +48,10 @@
     ~/Library/Application Support/Code/User/keybindings.json: symlinks/vscode/keybindings.json
     ~/Library/Application Support/Code/User/snippets: symlinks/vscode/snippets
 
+    ~/.gitconfig.local:
+      path: symlinks/git/.gitconfig.local
+      ignore-missing: true
+    ~/.zshrc.local:
+      path: symlinks/zsh/.zshrc.local
+      ignore-missing: true
+

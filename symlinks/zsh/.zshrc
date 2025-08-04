@@ -141,3 +141,12 @@ zstyle ':fzf-tab:*' switch-group '<' '>'
 
 # disable sort when completing `git checkout` to resort to most recent used branches
 zstyle ':completion:*:git-checkout:*' sort false
+
+# ============================================================================
+# Local Configuration
+# ============================================================================
+
+# Source local/environment-specific configuration if it exists
+if [[ -f ~/.zshrc.local ]]; then
+    source ~/.zshrc.local
+fi
