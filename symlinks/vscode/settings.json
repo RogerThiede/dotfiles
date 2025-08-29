@@ -1,4 +1,75 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "telemetry.telemetryLevel": "off"
+    // ───────────────────────────────────────────────────
+    // Privacy & Telemetry
+    // ───────────────────────────────────────────────────
+    "telemetry.telemetryLevel": "off",
+
+    // ───────────────────────────────────────────────────
+    // Files (saving / encoding / line endings)
+    // ───────────────────────────────────────────────────
+    "files.autoSave": "afterDelay",
+
+    // ───────────────────────────────────────────────────
+    // Editor — Behavior & Rendering
+    // ───────────────────────────────────────────────────
+    "editor.autoIndentOnPaste": true,
+    "editor.experimentalGpuAcceleration": "on",
+    "editor.unicodeHighlight.includeComments": true,
+    // Render only trailing whitespace (includes lines that are just spaces).
+    "editor.renderWhitespace": "trailing",
+    // Also render control chars to catch oddities like NBSP/ZWS.
+    "editor.renderControlCharacters": true,
+
+    // ───────────────────────────────────────────────────
+    // Workbench
+    // ───────────────────────────────────────────────────
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+        // Make whitespace glyphs stand out more.
+        "editorWhitespace.foreground": "#ff6b6b"
+    },
+
+    // ───────────────────────────────────────────────────
+    // Source Control
+    // ───────────────────────────────────────────────────
+    "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "always",
+
+    // ───────────────────────────────────────────────────
+    // VS Code Chat / Agents (host runtime)
+    // ───────────────────────────────────────────────────
+    "chat.agent.enabled": true,
+    "chat.agent.maxRequests": 100,
+    "chat.mcp.discovery.enabled": true,
+
+    // ───────────────────────────────────────────────────
+    // GitHub Copilot (features & UX)
+    // ───────────────────────────────────────────────────
+    "github.copilot.enable": {
+        "markdown": true,
+        "plaintext": true,
+        "scminput": true
+    },
+    "github.copilot.chat.agent.thinkingTool": true,
+    "github.copilot.chat.codesearch.enabled": true,
+    "github.copilot.chat.editor.temporalContext.enabled": true,
+    "github.copilot.chat.edits.temporalContext.enabled": true,
+    "github.copilot.chat.followUps": "firstOnly",
+    "github.copilot.chat.generateTests.codeLens": true,
+    "github.copilot.chat.newWorkspaceCreation.enabled": true,
+    "github.copilot.chat.scopeSelection": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+
+    // ───────────────────────────────────────────────────
+    // Inline Chat (editor inline UI)
+    // ───────────────────────────────────────────────────
+    "inlineChat.enableV2": true,
+    "inlineChat.notebookAgent": true,
+
+    // ───────────────────────────────────────────────────
+    // Python
+    // ───────────────────────────────────────────────────
+    "python.analysis.typeCheckingMode": "standard",
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3"
 }
