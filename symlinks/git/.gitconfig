@@ -4,6 +4,7 @@
     excludesfile = ~/.gitignore_global 
     preloadindex = true
     pager = less --quit-if-one-screen --no-init
+    autocrlf = input
 [difftool "sourcetree"]
     cmd = /Applications/SourceTree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
     path = 
@@ -29,5 +30,10 @@
     # rely upon ssh-agent through OS X Keychain
 [alias]
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 [include]
     path = ~/.gitconfig.local
